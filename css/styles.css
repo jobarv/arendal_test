@@ -1,3 +1,54 @@
+:root {
+    --colorDeFondo: rgb(30, 116, 173);
+    --blanco: rgb(255, 255, 255);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: var(--colorDeFondo);
+}
+
+h1,
+p {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+}
+
 #mazo {
     max-width: 50%;
+}
+
+@media (max-width: 468px) {
+    h1 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 8px;
+    }
+
+    .btn {
+        max-width: 80%;
+        font-size: 10px;
+    }
+
+    #mazo {
+        max-width: 120%;
+    }
+
 }
